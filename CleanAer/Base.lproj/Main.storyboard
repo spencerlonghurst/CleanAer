@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
-        <!--Building-->
+        <!--Buildings-->
         <scene sceneID="xgq-Uu-moc">
             <objects>
                 <viewController id="3Ma-N3-cVr" sceneMemberID="viewController">
@@ -96,15 +96,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJU-s6-krw">
-                                <rect key="frame" x="20" y="173" width="101" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A Building"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bA-j0-BVE">
-                                <rect key="frame" x="20" y="218" width="101" height="35"/>
+                                <rect key="frame" x="20" y="253" width="101" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="B Building"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Et-S7-5Xl">
+                                <rect key="frame" x="20" y="298" width="102" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="C Building"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment Building" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdr-Am-37E">
                                 <rect key="frame" x="40" y="103" width="264" height="50"/>
@@ -128,32 +128,105 @@
                                 <state key="normal" title="+"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Et-S7-5Xl">
-                                <rect key="frame" x="20" y="263" width="102" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78h-A8-stk">
+                                <rect key="frame" x="30" y="163" width="153" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="C Building"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upcoming Filters"/>
+                                <connections>
+                                    <segue destination="Ozb-87-qz1" kind="show" id="30k-3r-ff0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJU-s6-krw">
+                                <rect key="frame" x="20" y="208" width="101" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="A Building"/>
+                                <connections>
+                                    <segue destination="yMj-Ce-yoI" kind="show" id="NkN-Em-XmN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aUy-3d-ZHy"/>
                         <color key="backgroundColor" red="0.1635991205" green="0.1635991205" blue="0.1635991205" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="aUy-3d-ZHy" firstAttribute="trailing" secondItem="sgg-m5-WH0" secondAttribute="trailing" constant="30" id="1Lb-mS-s6f"/>
+                            <constraint firstItem="78h-A8-stk" firstAttribute="leading" secondItem="aUy-3d-ZHy" secondAttribute="leading" constant="30" id="1vz-xC-SfH"/>
+                            <constraint firstItem="8Et-S7-5Xl" firstAttribute="leading" secondItem="aUy-3d-ZHy" secondAttribute="leading" constant="20" id="3KD-up-cD5"/>
                             <constraint firstItem="7bA-j0-BVE" firstAttribute="top" secondItem="cJU-s6-krw" secondAttribute="bottom" constant="10" id="3tF-13-rFf"/>
-                            <constraint firstItem="8Et-S7-5Xl" firstAttribute="leading" secondItem="aUy-3d-ZHy" secondAttribute="leading" constant="20" id="7ur-A1-OO3"/>
                             <constraint firstItem="cJU-s6-krw" firstAttribute="leading" secondItem="aUy-3d-ZHy" secondAttribute="leading" constant="20" id="DEx-Zk-kO3"/>
+                            <constraint firstItem="cJU-s6-krw" firstAttribute="top" secondItem="78h-A8-stk" secondAttribute="bottom" constant="10" id="Dmy-RZ-Zjq"/>
                             <constraint firstItem="sgg-m5-WH0" firstAttribute="top" secondItem="aUy-3d-ZHy" secondAttribute="top" id="Fjj-go-gJL"/>
-                            <constraint firstItem="cJU-s6-krw" firstAttribute="top" secondItem="Kdr-Am-37E" secondAttribute="bottom" constant="20" id="IG9-yP-Bbe"/>
                             <constraint firstItem="Kdr-Am-37E" firstAttribute="leading" secondItem="aUy-3d-ZHy" secondAttribute="leading" constant="40" id="TuR-PR-vVb"/>
+                            <constraint firstItem="8Et-S7-5Xl" firstAttribute="top" secondItem="7bA-j0-BVE" secondAttribute="bottom" constant="10" id="UqR-is-tai"/>
                             <constraint firstItem="Kdr-Am-37E" firstAttribute="top" secondItem="aUy-3d-ZHy" secondAttribute="top" id="Wbi-Dh-b7w"/>
-                            <constraint firstItem="8Et-S7-5Xl" firstAttribute="top" secondItem="7bA-j0-BVE" secondAttribute="bottom" constant="10" id="Yx6-Qg-pMu"/>
                             <constraint firstItem="7bA-j0-BVE" firstAttribute="leading" secondItem="aUy-3d-ZHy" secondAttribute="leading" constant="20" id="dZo-Xz-EF1"/>
+                            <constraint firstItem="78h-A8-stk" firstAttribute="top" secondItem="Kdr-Am-37E" secondAttribute="bottom" constant="10" id="u5g-uC-bS5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Building" id="fLr-lM-8Qb"/>
+                    <navigationItem key="navigationItem" title="Buildings" id="fLr-lM-8Qb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxy-Py-GXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045" y="-318"/>
+            <point key="canvasLocation" x="923" y="-704"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6FR-rh-Q03">
+            <objects>
+                <viewController id="Ozb-87-qz1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yTy-dh-9uf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kuH-QR-aPV"/>
+                        <color key="backgroundColor" red="0.1635991205" green="0.1635991205" blue="0.1635991205" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GKw-LP-IgL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBH-Ta-B2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="-1066"/>
+        </scene>
+        <!--Units-->
+        <scene sceneID="Aev-44-xJd">
+            <objects>
+                <viewController id="yMj-Ce-yoI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ig-8u-agX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Apartment Unit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMn-jH-2zd">
+                                <rect key="frame" x="40" y="103" width="213" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="L1O-3R-8iu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemGray4Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivl-jD-pe8">
+                                <rect key="frame" x="313" y="103" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="OXo-Ny-sn5"/>
+                                    <constraint firstAttribute="height" constant="50" id="wSc-uY-tZM"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="+"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="29S-Hf-Qxa"/>
+                        <color key="backgroundColor" red="0.1635991205" green="0.1635991205" blue="0.1635991205" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aMn-jH-2zd" firstAttribute="leading" secondItem="29S-Hf-Qxa" secondAttribute="leading" constant="40" id="EZD-T7-ivT"/>
+                            <constraint firstItem="ivl-jD-pe8" firstAttribute="top" secondItem="29S-Hf-Qxa" secondAttribute="top" id="Ej0-dt-toF"/>
+                            <constraint firstItem="29S-Hf-Qxa" firstAttribute="trailing" secondItem="ivl-jD-pe8" secondAttribute="trailing" constant="30" id="SLu-hk-Msz"/>
+                            <constraint firstItem="aMn-jH-2zd" firstAttribute="top" secondItem="29S-Hf-Qxa" secondAttribute="top" id="diR-UW-wd5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Units" id="g53-ZI-c48"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFZ-8g-2y7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="-374"/>
         </scene>
     </scenes>
     <resources>
