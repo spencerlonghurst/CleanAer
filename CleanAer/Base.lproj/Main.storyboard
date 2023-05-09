@@ -169,21 +169,57 @@
             </objects>
             <point key="canvasLocation" x="923" y="-704"/>
         </scene>
-        <!--View Controller-->
+        <!--Upcoming Filters-->
         <scene sceneID="6FR-rh-Q03">
             <objects>
                 <viewController id="Ozb-87-qz1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yTy-dh-9uf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A101" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8u7-Te-H3o">
+                                <rect key="frame" x="20" y="128" width="46" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGray4Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 8, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEu-cF-IDL">
+                                <rect key="frame" x="130" y="128" width="185" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGray4Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A103" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goz-0g-yma">
+                                <rect key="frame" x="20" y="170" width="50" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGray4Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="October 8, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LM0-tI-ZyQ">
+                                <rect key="frame" x="130" y="170" width="157.33333333333337" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGray4Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kuH-QR-aPV"/>
                         <color key="backgroundColor" red="0.1635991205" green="0.1635991205" blue="0.1635991205" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AEu-cF-IDL" firstAttribute="top" secondItem="kuH-QR-aPV" secondAttribute="top" constant="25" id="6N8-Fy-qJR"/>
+                            <constraint firstItem="LM0-tI-ZyQ" firstAttribute="leading" secondItem="Goz-0g-yma" secondAttribute="trailing" constant="60" id="DfV-RZ-X5n"/>
+                            <constraint firstItem="8u7-Te-H3o" firstAttribute="leading" secondItem="kuH-QR-aPV" secondAttribute="leading" constant="20" id="Ghx-em-dbB"/>
+                            <constraint firstItem="LM0-tI-ZyQ" firstAttribute="top" secondItem="AEu-cF-IDL" secondAttribute="bottom" constant="15" id="MMi-X9-Nrw"/>
+                            <constraint firstItem="8u7-Te-H3o" firstAttribute="top" secondItem="kuH-QR-aPV" secondAttribute="top" constant="25" id="MZ6-On-hJ8"/>
+                            <constraint firstItem="AEu-cF-IDL" firstAttribute="leading" secondItem="8u7-Te-H3o" secondAttribute="trailing" constant="64" id="eVP-MD-lkk"/>
+                            <constraint firstItem="Goz-0g-yma" firstAttribute="top" secondItem="8u7-Te-H3o" secondAttribute="bottom" constant="15" id="jbQ-fa-Zda"/>
+                            <constraint firstItem="Goz-0g-yma" firstAttribute="leading" secondItem="kuH-QR-aPV" secondAttribute="leading" constant="20" id="pbC-6C-1E9"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GKw-LP-IgL"/>
+                    <navigationItem key="navigationItem" title="Upcoming Filters" id="GKw-LP-IgL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBH-Ta-B2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1891" y="-1066"/>
+            <point key="canvasLocation" x="1890.8396946564885" y="-1066.1971830985915"/>
         </scene>
         <!--Units-->
         <scene sceneID="Aev-44-xJd">
